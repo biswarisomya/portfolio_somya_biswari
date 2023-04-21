@@ -53,6 +53,7 @@ const Navbar = () => {
       >
         {data.map((d) => (
           <Link
+            key={d.label}
             role="button"
             activeClass="text-[#F06000]"
             to={d.url}
@@ -75,6 +76,7 @@ const Navbar = () => {
       >
         {data.map((d) => (
           <Link
+            key={d.label}
             role="button"
             activeClass="text-[#F06000]"
             to={d.url}
