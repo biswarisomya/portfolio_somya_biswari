@@ -19,7 +19,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         back: "url('/header-background.jpeg')",
-        profile: "url('/profile.jpg')",
         testimonial: "url('/testimonials-bg.jpg')",
       },
     },

@@ -1,6 +1,6 @@
 "use client";
 
-import { IoIosArrowDropdownCircle } from "react-icons/all";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 import Navbar from "@/app/homepage/Navbar";
 import { Link } from "react-scroll";

@@ -1,6 +1,6 @@
 "use client";
 
-import { IoIosArrowDropupCircle } from "react-icons/all";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 import { Link } from "react-scroll";
 const Footer = () => {
   return (

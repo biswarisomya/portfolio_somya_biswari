@@ -19,7 +19,7 @@ const Recommendations = () => {
           <div className="text-[16px] tracking-widest text-[#EBEEEE] mb-[20px] font-bold font-sans uppercase desktop:hidden">
             Recommendations
           </div>
-          <Carousel autoPlay className=" desktop:w-[70%]">
+          <Carousel showThumbs={false} autoPlay className=" desktop:w-[70%]">
             <div className="pb-[30px]">
               <div className=" italic font-serif text-white mobile:text-justify text-[20px] text-left leading-[42px] pb-[30px]  ">
                 Somya is a very good and technically strong resource, very

@@ -15,7 +15,7 @@ const About = () => {
       <div className="flex font-sans bg-[#2B2B2B] pt-[6rem] pb-[4rem] w-[71%] mobile:w-[72%] mx-auto">
         <div className="basis-[25%] px-[20px] mobile:hidden">
           <Image
-            className="rounded-[100%]  h-[248px]  "
+            className="rounded-[100%]"
             src={"/profile.jpg"}
             width="218"
             height="248"
