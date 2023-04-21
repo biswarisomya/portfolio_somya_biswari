@@ -101,7 +101,7 @@ const Projects = () => {
         <div className=" items-center bg-black p-[unset] gap-[1rem] flex text-white font-bold font-sans px-[2rem] py-[1rem] ">
           <Link
             className=""
-            href="https://github.com/biswarisomya"
+            href="https://github.com/biswarisomya/travelulu"
             target="_blank"
           >
             <FaGithub />
