@@ -1,5 +1,3 @@
-"use client";
-
 import { IoMdGlobe } from "react-icons/io";
 
 import SectionLayout, {
