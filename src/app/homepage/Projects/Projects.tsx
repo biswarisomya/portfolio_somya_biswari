@@ -165,7 +165,7 @@ const Projects = () => {
                   {/*</div>*/}
                   <div>
                     <Image
-                      className="h-[unset] h-[15rem] "
+                      className="h-[unset] h-[12rem] "
                       src="/weather/desktop-11.png"
                       width="250"
                       height="100"
@@ -175,7 +175,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
-                      className="h-[unset] h-[15rem] "
+                      className="h-[unset] h-[12rem]"
                       src="/weather/desktop-3.png"
                       width="250"
                       height="100"
@@ -185,7 +185,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
-                      className="h-[unset] h-[15rem] "
+                      className="h-[unset] h-[12rem]"
                       src="/weather/desktop-4.png"
                       width="250"
                       height="100"
@@ -195,7 +195,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
-                      className="h-[unset] h-[15rem] "
+                      className="h-[unset] h-[12rem] "
                       src="/weather/desktop-5.png"
                       width="250"
                       height="100"
@@ -205,7 +205,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
-                      className="h-[unset] h-[15rem] "
+                      className="h-[unset] h-[12rem] "
                       src="/weather/mobile-3.png"
                       width="250"
                       height="100"
@@ -215,7 +215,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
-                      className="h-[unset] h-[15rem] "
+                      className="h-[unset] h-[12rem] "
                       src="/weather/mobile-4.png"
                       width="250"
                       height="100"
