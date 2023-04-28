@@ -129,7 +129,7 @@ const Projects = () => {
           <div className="mobile:flex mobile:justify-center">
             <button onClick={() => setWeatherModalIsOpen(true)}>
               <Image
-                className="h-[unset] h-[10rem] "
+                className="h-[unset] h-[9.5rem] "
                 src="/weather/desktop-11.png"
                 width="300"
                 height="100"
@@ -143,7 +143,7 @@ const Projects = () => {
               contentLabel="Example Modal"
               className="w-[550px]  mobile:w-[calc(100%_-_40px)] mx-auto mobile:my-[15%] bg-white"
             >
-              <div className=" text-white bg-black p-[unset] text-white text-center font-bold font-sans px-[10px] py-[10px]">
+              <div className=" text-white bg-black p-[unset] text-white text-center font-bold font-sans px-[10px] py-[10px] mobile:px-0 mobile:py-0">
                 Weather
               </div>
               <div>
@@ -165,6 +165,7 @@ const Projects = () => {
                   {/*</div>*/}
                   <div>
                     <Image
+                      className="h-[unset] h-[15rem] "
                       src="/weather/desktop-11.png"
                       width="250"
                       height="100"
@@ -174,6 +175,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
+                      className="h-[unset] h-[15rem] "
                       src="/weather/desktop-3.png"
                       width="250"
                       height="100"
@@ -183,6 +185,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
+                      className="h-[unset] h-[15rem] "
                       src="/weather/desktop-4.png"
                       width="250"
                       height="100"
@@ -192,6 +195,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
+                      className="h-[unset] h-[15rem] "
                       src="/weather/desktop-5.png"
                       width="250"
                       height="100"
@@ -201,6 +205,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
+                      className="h-[unset] h-[15rem] "
                       src="/weather/mobile-3.png"
                       width="250"
                       height="100"
@@ -210,6 +215,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <Image
+                      className="h-[unset] h-[15rem] "
                       src="/weather/mobile-4.png"
                       width="250"
                       height="100"
