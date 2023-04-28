@@ -127,7 +127,7 @@ const Skills = () => {
         <div className="uppercase tracking-widest font-sans font-bold">
           {data.map((d) => {
             return (
-              <div>
+              <div key={d.technology}>
                 <p className="mobile:text-left mobile:tracking-widest mb-[15px] ">
                   {d.technology}
                 </p>
