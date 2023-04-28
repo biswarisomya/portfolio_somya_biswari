@@ -130,7 +130,7 @@ const Projects = () => {
             <button onClick={() => setWeatherModalIsOpen(true)}>
               <Image
                 className="h-[unset] h-[10rem] "
-                src="/weather/desktop-2.png"
+                src="/weather/desktop-11.png"
                 width="300"
                 height="100"
                 alt="Desktop-1"
@@ -165,7 +165,7 @@ const Projects = () => {
                   {/*</div>*/}
                   <div>
                     <Image
-                      src="/weather/desktop-2.png"
+                      src="/weather/desktop-11.png"
                       width="250"
                       height="100"
                       alt="Desktop-1"
