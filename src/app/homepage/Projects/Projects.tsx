@@ -10,6 +10,33 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   const [traveluluModalIsOpen, setTraveluluModalIsOpen] = useState(false);
   const [weatherModalIsOpen, setWeatherModalIsOpen] = useState(false);
+
+  const images = [
+    {
+      url: "/weather/desktop-11.png",
+      label: "Desktop-1",
+    },
+    {
+      url: "/weather/desktop-3.png",
+      label: "Desktop-2",
+    },
+    {
+      url: "/weather/desktop-4.png",
+      label: "Desktop-3",
+    },
+    {
+      url: "/weather/desktop-5.png",
+      label: "Desktop-4",
+    },
+    {
+      url: "/weather/mobile-3.png",
+      label: "Mobile-1",
+    },
+    {
+      url: "/weather/mobile-4.png",
+      label: "Mobile-2",
+    },
+  ];
   return (
     <section id="projects" className=" flex font-sans bg-[#ebeeee]   ">
       <div className=" flex flex-col pt-[20px]  pb-[4rem]  w-[71%] mx-auto ">
@@ -149,80 +176,19 @@ const Projects = () => {
               <div>
                 <Carousel
                   infiniteLoop
-                  interval={1000}
+                  interval={50000}
                   autoPlay
                   showIndicators={false}
                   showArrows
                 >
-                  {/*<div>*/}
-                  {/*  <Image*/}
-                  {/*    src="/weather/desktop-1.png"*/}
-                  {/*    width="250"*/}
-                  {/*    height="50"*/}
-                  {/*    alt="Desktop-1"*/}
-                  {/*  />*/}
-                  {/*  <p className="text-black pt-[10px] pb-[5px]">Desktop-1</p>*/}
-                  {/*</div>*/}
-                  <div>
-                    <Image
-                      className="h-[unset] h-[12rem] "
-                      src="/weather/desktop-11.png"
-                      width="250"
-                      height="100"
-                      alt="Desktop-1"
-                    />
-                    <p className="text-black pt-[10px] pb-[5px]">Desktop-1</p>
-                  </div>
-                  <div>
-                    <Image
-                      className="h-[unset] h-[12rem]"
-                      src="/weather/desktop-3.png"
-                      width="250"
-                      height="100"
-                      alt="Desktop-2"
-                    />
-                    <p className="text-black pt-[10px] pb-[5px]">Desktop-2</p>
-                  </div>
-                  <div>
-                    <Image
-                      className="h-[unset] h-[12rem]"
-                      src="/weather/desktop-4.png"
-                      width="250"
-                      height="100"
-                      alt="Desktop-3"
-                    />
-                    <p className="text-black ">Desktop-3</p>
-                  </div>
-                  <div>
-                    <Image
-                      className="h-[unset] h-[12rem] "
-                      src="/weather/desktop-5.png"
-                      width="250"
-                      height="100"
-                      alt="Desktop-4"
-                    />
-                    <p className="text-black ">Desktop-4</p>
-                  </div>
-                  <div>
-                    <Image
-                      className="h-[unset] h-[12rem] "
-                      src="/weather/mobile-3.png"
-                      width="250"
-                      height="100"
-                      alt="Mobile-1"
-                    />
-                    <p className="text-black ">Mobile-1</p>
-                  </div>
-                  <div>
-                    <Image
-                      className="h-[unset] h-[12rem] "
-                      src="/weather/mobile-4.png"
-                      width="250"
-                      height="100"
-                      alt="Mobile-2"
-                    />
-                    <p className="text-black ">Mobile-2</p>
-                  </div>
+                  {images.map((i) => (
+                    <div key={i.label} className="w-[250px] h-[250px]">
+                      <Image src={i.url} fill alt={i.label} />
+                      <p className="text-black absolute bottom-[5px] left-[45%]">
+                        {i.label}
+                      </p>
+                    </div>
+                  ))}
                 </Carousel>
               </div>
               <div className="w-[95%] px-[36px] pb-[18px] mobile:px-[2px] mobile:pb-[2px]">
