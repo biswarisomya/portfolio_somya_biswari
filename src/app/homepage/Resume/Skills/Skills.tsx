@@ -133,6 +133,7 @@ const Skills = () => {
                 </p>
                 <div className="w-[100%] bg-[#ccc] mb-[15px] ">
                   <div
+                    key={d.technology}
                     className={`h-[42px] w-[${d.percentage}%]  bg-[#313131] text-white text-right`}
                   >
                     {d.percentage}%

@@ -24,4 +24,5 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: ["w-[80%]", "w-[90%]", "w-[70%]"],
 };
