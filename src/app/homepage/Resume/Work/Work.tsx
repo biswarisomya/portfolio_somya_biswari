@@ -55,7 +55,7 @@ const Work = () => {
       <Heading className="w-[30%]">work</Heading>
       <Content>
         {data.map((d) => (
-          <>
+          <div key={d.comapany}>
             <div className="text-[1.6rem] font-sans font-bold mobile:mb-[12px]">
               {d.comapany}
             </div>
@@ -75,7 +75,7 @@ const Work = () => {
               <div>•{d.responsibilities[5]}</div>
               <div>•{d.responsibilities[6]}</div>
             </div>
-          </>
+          </div>
         ))}
       </Content>
     </SectionLayout>

@@ -54,7 +54,7 @@ const Recommendations = () => {
           </div>
           <Carousel showThumbs={false} autoPlay className=" desktop:w-[70%]">
             {data.map((d) => (
-              <div>
+              <div key={d.name}>
                 <div className=" italic font-serif text-white mobile:text-justify text-[20px] text-left leading-[42px] pb-[2em]  ">
                   {d.description}
                   <div className="text-white text-center text-[12px] leading-[18px] pt-[10px] ">
