@@ -5,40 +5,40 @@ import { useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { slide as Menu } from "react-burger-menu";
 
+const data = [
+  {
+    url: "home",
+    label: "Home",
+  },
+  {
+    url: "about",
+    label: "About",
+  },
+  {
+    url: "resume",
+    label: "Resume",
+  },
+  {
+    url: "projects",
+    label: "Projects",
+  },
+  {
+    url: "interests",
+    label: "Interests",
+  },
+  {
+    url: "recommendations",
+    label: "Recommendations",
+  },
+  {
+    url: "contact",
+    label: "Contact",
+  },
+];
+
 const Navbar = () => {
   const [hideBackground, setHideBackground] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const data = [
-    {
-      url: "home",
-      label: "Home",
-    },
-    {
-      url: "about",
-      label: "About",
-    },
-    {
-      url: "resume",
-      label: "Resume",
-    },
-    {
-      url: "projects",
-      label: "Projects",
-    },
-    {
-      url: "interests",
-      label: "Interests",
-    },
-    {
-      url: "recommendations",
-      label: "Recommendations",
-    },
-    {
-      url: "contact",
-      label: "Contact",
-    },
-  ];
 
   return (
     <div>

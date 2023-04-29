@@ -20,75 +20,74 @@ interface IProject {
   demo: string;
   figma?: string;
 }
+const projects: IProject[] = [
+  {
+    title: "travelulu",
+    description:
+      "This is a UI template for travel website, using which people can plan their trip ,search hotels and do many more.",
+    techstack: "Next JS, Tailwind, React,TypeScript, HTML 5,CSS 3 ,Vercel",
+    git: "https://github.com/biswarisomya/travelulu",
+    demo: "https://travelulu.vercel.app/",
+    figma:
+      "https://www.figma.com/file/yEx8JfvrJv73ozazLSiowf/Travelulu---Travel-Planning-UI-Kit?node-id=99-269&t=16bnngB94mO2WcKQ-0",
+    images: [
+      {
+        url: "/travelulu/desktop-1_50.png",
+        label: "Desktop-1",
+      },
+      {
+        url: "/travelulu/desktop-2_50.png",
+        label: "Desktop-2",
+      },
+      {
+        url: "/travelulu/mobile-1_50.png",
+        label: "Mobile-1",
+      },
+      {
+        url: "/travelulu/mobile-2_1_50.png",
+        label: "Mobile-2",
+      },
+    ],
+  },
+  {
+    title: "weather",
+    description:
+      "  This is a UI template for Weather website, using which people can get the Real time weather, Timezone, Astronomy and Sports for a given city anywhere across the globe!",
+    techstack:
+      " React JS, TypeScript, HTML 5, CSS 3, SCSS, Axios,React-Router,Vercel",
+    git: "https://github.com/biswarisomya/weather-app",
+    demo: "https://weather-app-biswarisomya.vercel.app/",
+    images: [
+      {
+        url: "/weather/desktop-11.png",
+        label: "Desktop-1",
+      },
+      {
+        url: "/weather/desktop-3.png",
+        label: "Desktop-2",
+      },
+      {
+        url: "/weather/desktop-4.png",
+        label: "Desktop-3",
+      },
+      {
+        url: "/weather/desktop-5.png",
+        label: "Desktop-4",
+      },
+      {
+        url: "/weather/mobile-3.png",
+        label: "Mobile-1",
+      },
+      {
+        url: "/weather/mobile-4.png",
+        label: "Mobile-2",
+      },
+    ],
+  },
+];
 
 const Projects = () => {
   const [modal, setModal] = useState<IProject | null>(null);
-  const projects: IProject[] = [
-    {
-      title: "travelulu",
-      description:
-        "This is a UI template for travel website, using which people can plan their trip ,search hotels and do many more.",
-      techstack: "Next JS, Tailwind, React,TypeScript, HTML 5,CSS 3 ,Vercel",
-      git: "https://github.com/biswarisomya/travelulu",
-      demo: "https://travelulu.vercel.app/",
-      figma:
-        "https://www.figma.com/file/yEx8JfvrJv73ozazLSiowf/Travelulu---Travel-Planning-UI-Kit?node-id=99-269&t=16bnngB94mO2WcKQ-0",
-      images: [
-        {
-          url: "/travelulu/desktop-1_50.png",
-          label: "Desktop-1",
-        },
-        {
-          url: "/travelulu/desktop-2_50.png",
-          label: "Desktop-2",
-        },
-        {
-          url: "/travelulu/mobile-1_50.png",
-          label: "Mobile-1",
-        },
-        {
-          url: "/travelulu/mobile-2_1_50.png",
-          label: "Mobile-2",
-        },
-      ],
-    },
-    {
-      title: "weather",
-      description:
-        "  This is a UI template for Weather website, using which people can get the Real time weather, Timezone, Astronomy and Sports for a given city anywhere across the globe!",
-      techstack:
-        " React JS, TypeScript, HTML 5, CSS 3, SCSS, Axios,React-Router,Vercel",
-      git: "https://github.com/biswarisomya/weather-app",
-      demo: "https://weather-app-biswarisomya.vercel.app/",
-      images: [
-        {
-          url: "/weather/desktop-11.png",
-          label: "Desktop-1",
-        },
-        {
-          url: "/weather/desktop-3.png",
-          label: "Desktop-2",
-        },
-        {
-          url: "/weather/desktop-4.png",
-          label: "Desktop-3",
-        },
-        {
-          url: "/weather/desktop-5.png",
-          label: "Desktop-4",
-        },
-        {
-          url: "/weather/mobile-3.png",
-          label: "Mobile-1",
-        },
-        {
-          url: "/weather/mobile-4.png",
-          label: "Mobile-2",
-        },
-      ],
-    },
-  ];
-  console.log("projects", projects);
 
   return (
     <section id="projects" className=" flex font-sans bg-[#ebeeee]   ">
@@ -98,8 +97,13 @@ const Projects = () => {
         </div>
         <div className="flex  mobile:flex-col   gap-[5rem] ">
           {projects.map((d) => (
-            <div role="button" key={d.title} onClick={() => setModal(d)}>
-              <div className="bg-[#212121] text-white capitalize text-center">
+            <div
+              role="button"
+              className="flex flex-col  items-center bg-white"
+              key={d.title}
+              onClick={() => setModal(d)}
+            >
+              <div className="bg-[#212121] text-white capitalize text-center w-[100%] ">
                 {d.title}
               </div>
               <Image
@@ -166,7 +170,6 @@ const Projects = () => {
               Figma
             </Link>
           )}
-
           <button className="uppercase" onClick={() => setModal(null)}>
             close
           </button>
