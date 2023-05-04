@@ -54,7 +54,7 @@ const projects: IProject[] = [
     description:
       "  This is a UI template for Weather website, using which people can get the Real time weather, Timezone, Astronomy and Sports for a given city anywhere across the globe!",
     techstack:
-      " React JS, TypeScript, HTML 5, CSS 3, SCSS, Axios,React-Router,Vercel",
+      " React JS, TypeScript, HTML 5, CSS 3, SCSS, Axios,React-Router, React Testing Library,Jest, Vercel",
     git: "https://github.com/biswarisomya/weather-app",
     demo: "https://weather-app-biswarisomya.vercel.app/",
     images: [
