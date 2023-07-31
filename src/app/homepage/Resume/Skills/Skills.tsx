@@ -52,6 +52,10 @@ const data = [
     percentage: 90,
   },
   {
+    technology: "JIRA",
+    percentage: 90,
+  },
+  {
     technology: "NODE JS",
     percentage: 90,
   },
@@ -64,28 +68,61 @@ const data = [
     percentage: 80,
   },
   {
-    technology: "MONGO DB",
-    percentage: 80,
-  },
-  {
     technology: "SQL",
-    percentage: 80,
-  },
-  {
-    technology: "AJAX",
     percentage: 80,
   },
   {
     technology: "REST API",
     percentage: 80,
   },
+];
+
+const skills = [
   {
-    technology: "NEXT JS",
-    percentage: 80,
+    label: "Languages",
+    value: ["Javascript"],
   },
   {
-    technology: "J-QUERY",
-    percentage: 70,
+    label: "Web Development",
+    value: [
+      "ReactJS",
+      "NextJS",
+      "Typescript",
+      "Redux",
+      "Recoil",
+      "Node",
+      "Express",
+      "HTML",
+      "SCSS",
+      "CSS",
+      "Tailwind",
+      "Bootstrap",
+      "ES6",
+    ],
+  },
+  {
+    label: "SW Tools",
+    value: [
+      "Git Hub",
+      "JIRA",
+      "VS Code",
+      "Agile Development",
+      "Waterfall",
+      "Postman",
+      "Webstorm",
+    ],
+  },
+  {
+    label: "Database",
+    value: ["Oracle", "MySql", "PostgreSQL"],
+  },
+  {
+    label: "AWS",
+    value: ["EC2", "S3", "RDS"],
+  },
+  {
+    label: "Testing and Performance",
+    value: ["React Testing Library", "Jest", "Lighthouse"],
   },
 ];
 
@@ -94,35 +131,19 @@ const Skills = () => {
     <SectionLayout className=" mobile:mt-[3rem] ">
       <Heading>skills</Heading>
       <Content>
-        <div className="text-justify leading-[30px] text-[#838C95] mb-[30px]">
-          <div>
-            <span className="text-[15px] font-sans font-bold">
-              Operating System
-            </span>
-            : Mac, Windows
-          </div>
-          <div>
-            <span className="text-[15px] font-sans font-bold">Tools</span>:
-            IntelliJ, Github, VS Code, AWS, Jenkins, Docker, JIRA, Eclipse{" "}
-          </div>
-          <div>
-            <span className="text-[15px] font-sans font-bold">
-              Testing Framework
-            </span>
-            : Junit, Mocha, Gherkin, Puppeteer, Enzyme, Jest
-          </div>
-          <div>
-            <span className="text-[15px] font-sans font-bold">
-              Machine Learning
-            </span>
-            : Tensorflow, Keras, Numpy, Anaconda Navigator,
-          </div>
-          <div>
-            <span className="text-[15px] font-sans font-bold">
-              Learning Technologies:
-            </span>
-            : Native React, Graph QL
-          </div>
+        <div className=" leading-[30px] text-[#838C95] mb-[30px]">
+          {skills.map((d) => {
+            return (
+              <div>
+                <span className="text-[15px] font-sans font-bold">
+                  {d.label}:
+                </span>
+                {d.value.map((v, i) => (
+                  <span>{i === d.value.length - 1 ? ` ${v}` : ` ${v},`}</span>
+                ))}
+              </div>
+            );
+          })}
         </div>
         <div className="uppercase tracking-widest font-sans font-bold">
           {data.map((d) => {

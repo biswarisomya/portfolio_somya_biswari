@@ -26,10 +26,10 @@ const data = [
     url: "interests",
     label: "Interests",
   },
-  {
-    url: "recommendations",
-    label: "Recommendations",
-  },
+  // {
+  //   url: "recommendations",
+  //   label: "Recommendations",
+  // },
   {
     url: "contact",
     label: "Contact",

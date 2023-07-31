@@ -16,7 +16,7 @@ const About = () => {
         <div className="basis-[25%] px-[20px] mobile:hidden">
           <Image
             className="rounded-[100%]"
-            src={"/profile.jpg"}
+            src={"/profile_pic.jpg"}
             width="218"
             height="248"
             alt="profile"
@@ -45,7 +45,7 @@ const About = () => {
             </div>
             <div className="mobile:leading-[30px]">
               <div>Somya Biswari</div>
-              <div>San Francisco, CA 90012 US</div>
+              <div>San Francisco, CA, US</div>
               <div>(341) 356-2499</div>
               <div>biswarisomya1@gmail.com</div>
             </div>
@@ -59,12 +59,12 @@ const About = () => {
               </Link>
             </button>
             <div className="flex gap-5 mt-[4rem] mobile:mb-[24px] mobile:mt-[12px]">
-              <Link
-                href="https://www.facebook.com/somyabiswari11/"
-                target="_blank"
-              >
-                <FaFacebookF />
-              </Link>
+              {/*<Link*/}
+              {/*  href="https://www.facebook.com/somyabiswari11/"*/}
+              {/*  target="_blank"*/}
+              {/*>*/}
+              {/*  <FaFacebookF />*/}
+              {/*</Link>*/}
               <Link
                 href="https://www.linkedin.com/in/somya-biswari/"
                 target="_blank"

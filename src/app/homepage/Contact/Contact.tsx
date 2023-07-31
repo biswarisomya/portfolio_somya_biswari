@@ -14,7 +14,7 @@ const Contact = () => {
           </span>
           <div className="flex flex-col  mobile:w-[72%] mobile:mx-auto text-[17px] font-semibold font-sans leading-[30px] text-[#D8D8D8]">
             <span>Somya Biswari</span>
-            <span>San Francisco, CA 90012 US</span>
+            <span>San Francisco, CA, US</span>
             <span>(341) 356-2499</span>
             <span>biswarisomya1@gmail.com</span>
           </div>
