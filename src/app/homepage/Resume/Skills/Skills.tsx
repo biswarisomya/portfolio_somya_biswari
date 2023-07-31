@@ -132,18 +132,18 @@ const Skills = () => {
       <Heading>skills</Heading>
       <Content>
         <div className=" leading-[30px] text-[#838C95] mb-[30px]">
-          {skills.map((d) => {
-            return (
-              <div>
-                <span className="text-[15px] font-sans font-bold">
-                  {d.label}:
+          {skills.map((d) => (
+            <div key={d.label}>
+              <span className="text-[15px] font-sans font-bold">
+                {d.label}:
+              </span>
+              {d.value.map((v, i) => (
+                <span key={v}>
+                  {i === d.value.length - 1 ? ` ${v}` : ` ${v},`}
                 </span>
-                {d.value.map((v, i) => (
-                  <span>{i === d.value.length - 1 ? ` ${v}` : ` ${v},`}</span>
-                ))}
-              </div>
-            );
-          })}
+              ))}
+            </div>
+          ))}
         </div>
         <div className="uppercase tracking-widest font-sans font-bold">
           {data.map((d) => {
